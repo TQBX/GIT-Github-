@@ -40,7 +40,7 @@
 
 `git config --global user.email [user.email]`
 
-![user](D:\my blog\GIT\pictures\user.png)
+![user](https://github.com/TQBX/GIT-Github-/tree/master/pictures/user.png)
 
 **--global** 是系统用户级别，信息保存在`：~/.gitconfig `文件中。
 
