@@ -1,2 +1,5 @@
 # GIT-Github-
-！[fe](https://github.com/TQBX/GIT-Github-/blob/master/pictures/add%20status.png)
+# THIS IS MY FIRST BLOG!
+- about what is git?
+- about how to use git with fundamental means?
+
