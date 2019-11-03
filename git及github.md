@@ -46,7 +46,7 @@
 
 可以通过`$ cat ~/.gitconfig`命令查看。
 
-![cat gitconfig](D:\my blog\GIT\pictures\cat gitconfig.png)
+![cat gitconfig](https://github.com/TQBX/GIT-Github-/tree/master/pictures/cat gitconfig.png)
 
 ##### 2.创建本地库
 
@@ -63,7 +63,7 @@ $cd gitwork
 
 `git init`
 
-![git init](D:\my blog\GIT\pictures\git init.png)
+![git init](https://github.com/TQBX/GIT-Github-/tree/master/pictures/git init.png)
 
 初始化成功，当前目录下多出了`.git`目录，不能随意修改或者删除。
 
@@ -73,7 +73,7 @@ $cd gitwork
 
 `git status`
 
-![git status](D:\my blog\GIT\pictures\git status.png)
+![git status](https://github.com/TQBX/GIT-Github-/tree/master/pictures/git status.png)
 
 当前为空库，所以no commits .分支为master.
 
@@ -85,7 +85,7 @@ $cd gitwork
 >
 > 2、使用`git add [filename]`命令，将文件加到暂存区。
 >
-> ![git add](D:\my blog\GIT\pictures\git add.png)
+> ![git add](https://github.com/TQBX/GIT-Github-/tree/master/pictures/git add.png)
 
 > 可以发现，出现了warning语句。注意：
 > warning: LF will be replaced by CRLF in app.wxss.
@@ -93,19 +93,19 @@ $cd gitwork
 > 原因是路径中存在 / 的符号转义问题，false就是不转换符号默认是true，相当于把路径的 / 符号进行转义，这样添加的时候就有问题.解决方法就是输入以下命令，接着按原计划走。
 > `git config --global core.autocrlf false`
 
-![core.autocrlf](D:\my blog\GIT\pictures\core.autocrlf.png)
+![core.autocrlf](https://github.com/TQBX/GIT-Github-/tree/master/pictures/core.autocrlf.png)
 
 ##### 6.提交文件
 
 此时再次输入`git status`命令，可以查看仓库的状态，以加深对工作区，暂存区和本地库的理解。
 
-![add status](D:\my blog\GIT\pictures\add status.png)
+![add status](https://github.com/TQBX/GIT-Github-/tree/master/pictures/add status.png)
 
 > 一个新的文件被加入到暂存区，就是绿色部分所显示的。**将“新建、修改”的文件添加至暂存区**。
 
 `git commit -m "message"[filename]`
 
-![git commit](D:\my blog\GIT\pictures\git commit.png)
+![git commit](https://github.com/TQBX/GIT-Github-/tree/master/pictures/git commit.png)
 
 > **将暂存区的内容提交至本地库。**
 
@@ -113,7 +113,7 @@ $cd gitwork
 
 `git log`
 
-![gitlog](D:\my blog\GIT\pictures\gitlog.png)
+![gitlog](https://github.com/TQBX/GIT-Github-/tree/master/pictures/gitlog.png)
 
 > 当然，这里作为演示，只有一步行为。在实际的应用过程中，版本更新的频率是很高的，所以为了看着舒适清晰，可以采用以下命令：
 >
@@ -127,7 +127,7 @@ $cd gitwork
 
 > 在提交了多次修改申请之后，界面变成如下：
 
-![git reflog](D:\my blog\GIT\pictures\git reflog.png)
+![git reflog](https://github.com/TQBX/GIT-Github-/tree/master/pictures/git reflog.png)
 
 > - 后退：`git reset --hard HEAD^` 表示后退一步
 >
@@ -139,7 +139,7 @@ $cd gitwork
 >
 > - 前进：只能基于索引值，推荐使用。
 >
-> ![reset](D:\my blog\GIT\pictures\reset.png)
+> ![reset](https://github.com/TQBX/GIT-Github-/tree/master/pictures/reset.png)
 >
 > 前进或者后退，HEAD指针都在随着版本更新，在变化。
 
