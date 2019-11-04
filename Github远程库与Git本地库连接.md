@@ -38,20 +38,29 @@
 
       2.`git remote rm origin` 移除https方式换成ssh方式
 
+      <img src="https://t1.picb.cc/uploads/2019/11/04/gYZuyR.png" alt="gYZuyR.png" border="0">
+
       3.复制ssh地址。
+
+      <img src="https://t1.picb.cc/uploads/2019/11/04/gYZcag.png" alt="gYZcag.png" border="0">
 
       4.`git remote add origin [复制的地址]`
 
+      <img src="https://t1.picb.cc/uploads/2019/11/04/gYZCm8.png" alt="gYZCm8.png" border="0">
+
       5.`git remote -v`查看是否更改成功
+
+      <img src="https://t1.picb.cc/uploads/2019/11/04/gYZmDX.png" alt="gYZmDX.png" border="0">
 
       6.`git push origin master`重新提交
 
 - 克隆文件
 
-   - `git clone [远程地址]`
-     - 把远程库下载到本地
-     - 创建origin远程地址别名
-     - 初始化本地库
+  - `git clone [远程地址]`
+    - 把远程库下载到本地
+    - 创建origin远程地址别名
+    - 初始化本地库
+
 
 
 
