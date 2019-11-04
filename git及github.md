@@ -1,9 +1,5 @@
 
 
-[TOC]
-
-
-
 # Git及Github的使用
 
 > 本文讲述Git的基本概念及本地库基本使用方法等。
@@ -39,11 +35,13 @@
 `git config --global user.name [user.name]`
 
 `git config --global user.email [user.email]`
+
 ![gKoYGu.png](https://t1.picb.cc/uploads/2019/11/04/gKoYGu.png)
 
 **--global** 是系统用户级别，信息保存在`：~/.gitconfig `文件中。
 
 可以通过`$ cat ~/.gitconfig`命令查看。
+
 ![gKoTlF.png](https://t1.picb.cc/uploads/2019/11/04/gKoTlF.png)
 
 ##### 2.创建本地库
@@ -60,7 +58,9 @@ $cd gitwork
 ##### 3.仓库初始化
 
 `git init`
+
 ![gKozM1.png](https://t1.picb.cc/uploads/2019/11/04/gKozM1.png)
+
 初始化成功，当前目录下多出了`.git`目录，不能随意修改或者删除。
 
 可以使用`ls -ah`查看隐藏的`.git`
@@ -68,7 +68,9 @@ $cd gitwork
 ##### 4.状态查看
 
 `git status`
+
 ![gKoLUJ.png](https://t1.picb.cc/uploads/2019/11/04/gKoLUJ.png)
+
 当前为空库，所以no commits .分支为master.
 
 ##### 5.添加文件
@@ -78,28 +80,38 @@ $cd gitwork
 > 1、想要添加文件，得先写一个文件。用`vim [filename]`写一个.txt文件，关于[vim](https://www.cnblogs.com/itech/archive/2009/04/17/1438439.html)的在此不做过多的探究，退出键为`ESC`,再输入`：wq`，文件便创建完成。
 >
 > 2、使用`git add [filename]`命令，将文件加到暂存区。
+
 >![gKoRYt.png](https://t1.picb.cc/uploads/2019/11/04/gKoRYt.png)
+
 > 可以发现，出现了warning语句。注意：
 > warning: LF will be replaced by CRLF in app.wxss.
 > The file will have its original line endings in your working directory.
 > 原因是路径中存在 / 的符号转义问题，false就是不转换符号默认是true，相当于把路径的 / 符号进行转义，这样添加的时候就有问题.解决方法就是输入以下命令，接着按原计划走。
+
 > `git config --global core.autocrlf false`
+
 ![gKoF4T.png](https://t1.picb.cc/uploads/2019/11/04/gKoF4T.png)
 
 ##### 6.提交文件
 
 此时再次输入`git status`命令，可以查看仓库的状态，以加深对工作区，暂存区和本地库的理解。
+
 ![gKoBV6.png](https://t1.picb.cc/uploads/2019/11/04/gKoBV6.png)
+
 > 一个新的文件被加入到暂存区，就是绿色部分所显示的。**将“新建、修改”的文件添加至暂存区**。
 
 `git commit -m "message"[filename]`
+
 ![gKoPjM.png](https://t1.picb.cc/uploads/2019/11/04/gKoPjM.png)
+
 > **将暂存区的内容提交至本地库。**
 
 ##### 7.历史记录
 
 `git log`
+
 ![gKosf0.png](https://t1.picb.cc/uploads/2019/11/04/gKosf0.png)
+
 > 当然，这里作为演示，只有一步行为。在实际的应用过程中，版本更新的频率是很高的，所以为了看着舒适清晰，可以采用以下命令：
 >
 > ```git
@@ -113,7 +125,9 @@ $cd gitwork
 > 在提交了多次修改申请之后，界面变成如下：
 
 > - 后退：`git reset --hard HEAD^` 表示后退一步
+
 ![gKoDFd.png](https://t1.picb.cc/uploads/2019/11/04/gKoDFd.png)
+
 >   `提示：HEAD is now at f435d69 commit youfirst.txt`
 >
 > ​	`git reset --hard HEAD~n` 表示后退n步
@@ -154,7 +168,9 @@ $cd gitwork
 ##### 10.比较文件差异
 
 `1、git diff[filename]`:将**工作区**的文件和**暂存区**进行比较。
+
 ![gKoKVa.png](https://t1.picb.cc/uploads/2019/11/04/gKoKVa.png)
+
 `2、git diff[本地库中的历史版本][文件名]`：**工作区**和**本地库**中的历史记录比较。
 
 3、不带文件名比较多个文件。
