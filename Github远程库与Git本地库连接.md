@@ -2,7 +2,9 @@
 
 - 创建SSH Key
   - 用户主目录有`.ssh`->`id_rsa`和`id_rae.pub`->直接跳过
+  
   > 在命令行输入`cd ~/.ssh`查看是否存在`.ssh`目录。
+  
   - 若没有->`ssh-keygen -t rsa -C["邮件地址"]`->回车完事
   
   ![gKoWFg.png](https://t1.picb.cc/uploads/2019/11/04/gKoWFg.png)
