@@ -92,6 +92,10 @@ $cd gitwork
 
 ![gKoF4T.png](https://t1.picb.cc/uploads/2019/11/04/gKoF4T.png)
 
+> 提交文件夹->`git add .`,`.`表示当前目录所有。
+
+<img src="https://t1.picb.cc/uploads/2019/11/05/gYi6HF.png" alt="gYi6HF.png" border="0" />
+
 ##### 6.提交文件
 
 此时再次输入`git status`命令，可以查看仓库的状态，以加深对工作区，暂存区和本地库的理解。
